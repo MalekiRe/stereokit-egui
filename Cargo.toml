@@ -1,0 +1,15 @@
+[package]
+name = "stereokit-egui"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+egui = "0.22.0"
+stereokit = { path = "../stereokit-rs", features = ["linux-egl"]}
+egui_glow = "0.22.0"
+glam = "0.23.0"
+bytemuck = "1.13.1"
+stereokit-sys = { path = "../stereokit-sys2"}
+glutin = "0.30.8"
